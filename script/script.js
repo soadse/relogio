@@ -51,7 +51,7 @@ function contarTempo(){
     hora.innerText = `${horas}`
     segundos++
     if(segundos == 60){
-        segundos = 0
+        segundos = -1
         minutos += 1
     } else if(segundos < 10){
         segundo.innerText = `0${segundos}`
