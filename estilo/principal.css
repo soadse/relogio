@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.containerHoras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerHoras > .relogio {
+    font-size: 6em;
+    font-family: monospace;
+    color: white;
+}
+.containerHoras > p {
+    color: white;
+    font-size: 4em;
+}
+
+.containerDias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerDias > .calendario {
+    font-size: 4em;
+    font-family: monospace;
+    color: white;
+}
+.containerDias > p {
+    color: white;
+    margin: 5px;
+    font-size: 3em;
+}
+#semana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
