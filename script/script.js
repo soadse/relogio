@@ -53,10 +53,15 @@ function contarTempo(){
     if(segundos == 60){
         segundos = 0
         minutos += 1
+    } else if(segundos < 10){
+        segundo.innerText = `0${segundos}`
     }
+
     if(minutos == 60){
         minutos = 0
         horas += 1
+    } else if(minutos < 10){
+        minuto.innerText = `0${minutos}`
     }
 
     if(horas == 24){
@@ -65,19 +70,6 @@ function contarTempo(){
 }
 setInterval(contarTempo, 1000)
 
-// COLOCA UM ZERO(0) ANTES DOS NÚMEROS MENORES QUE DEZ(10)
-function zero(){
-    if(segundos < 10){
-        segundos = `0${segundos}`
-    }
-    if(minutos < 10){
-        minutos = `0${minutos}`
-    }
-    if(horas < 10){
-        horas = `0${horas}`
-    }
-}
-setInterval(zero, 1000)
 
 // ATUALIZA O CALENDÁRIO
 function contarDia(){
