@@ -17,16 +17,20 @@ const relogio = setInterval(function time() {
     minuto.innerText = `${min}`
     segundo.innerText = `${seg}`
 
-    if(hr < 12){
+    if(hr >= 6 && hr < 12){
         corpo.style.background = 'lightblue'
         saudacao.innerText = 'Bom Dia'
-    } else if(hr >= 12 && min >= 0 && hr < 18){
+    } else if(hr >= 12 && hr < 18){
         corpo.style.background = 'orange'
         saudacao.innerText = 'Boa Tarde'
-    } else if(hr >= 18) {
+    } else if(hr >= 18 && hr < 24) {
         corpo.style.background = 'darkblue'
         saudacao.innerText = 'Boa Noite'
+    } else {
+        corpo.style.background = 'black'
+        saudacao.innerText = 'Boa Madrugada'
     }
+    
 })
 
 
